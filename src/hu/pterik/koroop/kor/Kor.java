@@ -34,4 +34,8 @@ public class Kor {
         return (int)(Math.random()*(n +2)+1- n);
     }
 
+    @Override
+    public String toString() {
+        return String.format("A kör középpontja: (%d,%d) sugara: %d",this.kozx,this.kozy,this.sugar);
+    }
 }
