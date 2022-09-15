@@ -34,6 +34,17 @@ public class Kor {
         return (int)(Math.random()*(n +2)+1- n);
     }
 
+    private double kerulet()
+    {
+        return (2*sugar)*Math.PI;
+
+    }
+    private double terulet()
+    {
+        return Math.pow(this.sugar,2)*Math.PI;
+
+    }
+
     @Override
     public String toString() {
         return String.format("A kör középpontja: (%d,%d) sugara: %d",this.kozx,this.kozy,this.sugar);
