@@ -26,7 +26,7 @@ public class Kor {
 
         this.kozx = rand(n);
         this.kozy = rand(n);
-        this.sugar = rand(n);
+        this.sugar = (int) (Math.random()*n +1);
 
     }
 
@@ -44,9 +44,16 @@ public class Kor {
         return Math.pow(this.sugar,2)*Math.PI;
 
     }
+    public void nagyit(int nagyito)
+    {
+        this.sugar+=nagyito;
+
+    }
+
+
 
     @Override
     public String toString() {
-        return String.format("A kör középpontja: (%d,%d) sugara: %d",this.kozx,this.kozy,this.sugar);
+        return String.format("(x=%d,y=%d,r=%d)",this.kozx,this.kozy,this.sugar);
     }
 }
