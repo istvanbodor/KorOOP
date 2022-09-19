@@ -34,21 +34,21 @@ public class Kor {
         return (int)(Math.random()*(n +2)+1- n);
     }
 
-    private double kerulet()
+    public double kerulet()
     {
         return (2*sugar)*Math.PI;
 
     }
-    private double terulet()
+    public double terulet()
     {
-        return Math.pow(this.sugar,2)*Math.PI;
-
+        return (Math.pow(this.sugar,2)*Math.PI);
     }
     public void nagyit(int nagyito)
     {
         this.sugar+=nagyito;
 
     }
+
 
 
 
